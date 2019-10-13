@@ -1,6 +1,6 @@
 public class Variable {
-	public static void main (String[] args ) {
-		byte CPU = 3;
+	public static void main(String[] args ) {
+		byte cpu = 3;
 		short model = 2100;
 		int minMemory = 1066;
 		long maxMemory = 1333;
@@ -8,7 +8,8 @@ public class Variable {
 		double limit2 = 3.40d;
 		char name = 'I';
 		boolean isStarted = true;
-		System.out.println(name + " i" + CPU + "-" + model + " " + limit + "Ghz" + " " + limit2 + " Ghz");
+		
+		System.out.println(name + " i" + cpu + "-" + model + " " + limit + "Ghz" + " " + limit2 + " Ghz");
 		System.out.println("Частота оперативной памяти " + minMemory + "-" + maxMemory);
 		System.out.println(isStarted);
 	}
