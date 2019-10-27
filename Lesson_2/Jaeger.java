@@ -8,106 +8,24 @@ public class Jaeger {
     private int speed;
     private int strength;
     private int armor;
-    private String unitsOfChange1 = "m";
-    private String unitsOfChange2 = "tons";
 
-    public String getModelName() {
-        return modelName;
-    }
-
-    void setModelName(String modelName) {
-        if(modelName == "") {
-            System.out.println("Пустая строка");
-        } else {
-            this.modelName = modelName;
-        }
-    }
-    public String getMark() {
-        return mark;
-    }
-
-    public void setMark(String mark) {
+    public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armor) {
+        this.modelName = modelName;
         this.mark = mark;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
         this.origin = origin;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public void setHeight(float height) {
         this.height = height;
-    }
-
-    public float getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
         this.weight = weight;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(int speed) {
         this.speed = speed;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public void setStrength(int strength) {
         this.strength = strength;
-    }
-
-    public int getArmor() {
-        return armor;
-    }
-
-    public void setArmor(int armor) {
         this.armor = armor;
-    }
 
-    public String getUnitsOfChange1() {
-        return unitsOfChange1;
-    }
-
-    public void setUnitsOfChange1(String unitsOfChange1) {
-        this.unitsOfChange1 = unitsOfChange1;
-    }
-
-    public String getUnitsOfChange2() {
-        return unitsOfChange2;
-    }
-
-    public void setUnitsOfChange2(String unitsOfChange2) {
-        this.unitsOfChange2 = unitsOfChange2;
-    }
-
-    public boolean drift() {
-        System.out.println("Вы вошли в дрифт");
-        return true;
-    }
-
-    public void move() {
-        System.out.println("Вы прошли 5 шагов");
-    }
-
-    public String scanKaiju() {
-        return "nothing";
-    }
-
-    public void useVortexCannon() {
-
+        System.out.println("ModelName = " + this.modelName);
+        System.out.println("Mark = " + this.mark);
+        System.out.println("Origin = " + this.origin);
+        System.out.println("Height = " + this.height + "m");
+        System.out.println("Weight = " + this.weight + " tons");
+        System.out.println("Speed = " + this.speed);
+        System.out.println("Strength = " + this.strength);
+        System.out.println("Armor = " + this.armor);
     }
 }

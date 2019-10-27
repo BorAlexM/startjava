@@ -1,15 +1,14 @@
-	/*
-		напишите в нем поля: пол, кличка, вес, возраст, окрас
-		напишите в нем методы: идти, сидеть, бежать, выть, охотиться
-	*/
-
+/*
+напишите в нем поля: пол, кличка, вес, возраст, окрас
+напишите в нем методы: идти, сидеть, бежать, выть, охотиться
+*/
 public class Wolf {
 	
     private String sex;
-    private String wolfNickName;
+    private String nickName;
     private float weigth;
     private int wolfAge;
-    private String wolfColor;
+    private String Color;
 
     public String getSex() {
         return sex;
@@ -19,12 +18,12 @@ public class Wolf {
         this.sex = sex;
     }
 
-    public String getWolfNickName() {
-        return wolfNickName;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setWolfNickName(String wolfNickName) {
-        this.wolfNickName = wolfNickName;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public float getWeigth() {
@@ -46,12 +45,12 @@ public class Wolf {
         this.wolfAge = wolfAge;
     }
 
-    public String getWolfColor() {
-        return wolfColor;
+    public String getColor() {
+        return color;
     }
 
-    public void setWolfColor(String wolfColor) {
-        this.wolfColor = wolfColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void go() {
