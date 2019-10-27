@@ -2,7 +2,7 @@ public class Calculator {
 
     private int number1;
     private int number2;
-    private String operation;
+    private char operation;
 
     public int getNumber1() {
         return number1;
@@ -20,32 +20,44 @@ public class Calculator {
         this.number2 = number2;
     }
 
-    public String getOperation() {
+    public char getOperation() {
         return operation;
     }
 
-    public void setOperation(String operation) {
+    public void setOperation(char operation) {
+/*        if(operation != operation) {
+            System.out.println( "Данной математической операции не существует! Попробуйте снова." );
+        }*/
         this.operation = operation;
     }
 
-    switch(operation){
-        case "+": System.out.println(number1 + number2);
+    public boolean operations() {
+        switch (operation) {
+            case '+':
+                System.out.println( number1 + number2 );
                 break;
-        case "-": System.out.println(number1 - number2);
+            case '-':
+                System.out.println( number1 - number2 );
                 break;
-        case "*": System.out.println(number1 * number2);
+            case '*':
+                System.out.println( number1 * number2 );
                 break;
-        case "/": System.out.println(number1 / number2);
+            case '/':
+                System.out.println( number1 / number2 );
                 break;
-        case "^":
-            int result = 1;
-            for (int i = 0; i < number2; i++) {
-                result = result * number1;
-            }
-            System.out.println(result);
+            case '^':
+                int result = 1;
+                for (int i = 0; i < number2; i++) {
+                    result = result * number1;
+                }
+                System.out.println( result );
                 break;
-        case "%": System.out.println(number1 % number2);
+            case '%':
+                System.out.println( number1 % number2 );
                 break;
-
+/*             default:
+                 System.out.println("Данной математической операции не существует! Попробуйте снова.");*/
+        }
+        return true;
     }
 }
