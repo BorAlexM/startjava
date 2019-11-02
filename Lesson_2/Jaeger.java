@@ -19,13 +19,71 @@ public class Jaeger {
         this.strength = strength;
         this.armor = armor;
 
-        System.out.println("ModelName = " + this.modelName);
-        System.out.println("Mark = " + this.mark);
-        System.out.println("Origin = " + this.origin);
-        System.out.println("Height = " + this.height + "m");
-        System.out.println("Weight = " + this.weight + " tons");
-        System.out.println("Speed = " + this.speed);
-        System.out.println("Strength = " + this.strength);
-        System.out.println("Armor = " + this.armor);
+    }
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        if(modelName == "") {
+            System.out.println("Пустая строка");
+        } else {
+            this.modelName = modelName;
+        }
+    }
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public int getArmor() {
+        return armor;
+    }
+
+    public void setArmor(int armor) {
+        this.armor = armor;
     }
 }
