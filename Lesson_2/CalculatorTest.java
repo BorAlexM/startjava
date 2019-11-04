@@ -17,8 +17,10 @@ public class CalculatorTest {
             calc.setCalculate(calculate);
             calc.setNumber2(number2);
             calc.calculate();
-            System.out.println("Хотите продолжить? [да/нет]");
-            answer = scanner.next();
+            do {
+                System.out.println( "Хотите продолжить? [да/нет]" );
+                answer = scanner.next();
+            } while (!"нет".equals(answer) && !"да".equals(answer));
         } while (!"нет".equals(answer));
     }
 }
