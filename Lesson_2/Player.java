@@ -10,15 +10,11 @@ public class Player {
         this.name = name;
     }
 
-        public int getNumber() {
+    public int getNumber() {
         return number;
     }
 
     public void setNumber(int number) {
         this.number = number;
-    }
-
-    public void guess () {
-        number = (int) (Math.random() * 101);
     }
 }

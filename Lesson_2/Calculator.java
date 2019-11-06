@@ -2,7 +2,7 @@ public class Calculator {
 
     private int number1;
     private int number2;
-    private char calculate;
+    private char operation;
 
     public int getNumber1() {
         return number1;
@@ -20,16 +20,16 @@ public class Calculator {
         this.number2 = number2;
     }
 
-    public char getCalculate() {
-        return calculate;
+    public char getOperation() {
+        return operation;
     }
 
-    public void setCalculate(char calculate) {
-        this.calculate = calculate;
+    public void setOperation(char operation) {
+        this.operation = operation;
     }
 
-    public boolean calculate() {
-        switch (calculate) {
+    public boolean operation() {
+        switch (operation) {
             case '+':
                 System.out.println(number1 + number2);
                 break;
@@ -45,7 +45,7 @@ public class Calculator {
             case '^':
                 int result = 1;
                 for (int i = 0; i < number2; i++) {
-                    result = result * number1;
+                    result *= number1;
                 }
                 System.out.println(result);
                 break;

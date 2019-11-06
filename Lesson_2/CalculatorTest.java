@@ -9,16 +9,16 @@ public class CalculatorTest {
 
             System.out.println("Введите первое число: ");
             int number1 = scanner.nextInt();
+            calc.setNumber1(number1);
             System.out.println("Введите знак математической операции");
             char calculate = scanner.next().charAt(0);
+            calc.setCalculate(calculate);
             System.out.println("Ввведите второе число: ");
             int number2 = scanner.nextInt();
-            calc.setNumber1(number1);
-            calc.setCalculate(calculate);
-            calc.setNumber2(number2);
+            calc.setNumber2(number2);       
             calc.calculate();
             do {
-                System.out.println( "Хотите продолжить? [да/нет]" );
+                System.out.println("Хотите продолжить? [да/нет]");
                 answer = scanner.next();
             } while (!"нет".equals(answer) && !"да".equals(answer));
         } while (!"нет".equals(answer));

@@ -18,8 +18,8 @@ public class Jaeger {
         this.speed = speed;
         this.strength = strength;
         this.armor = armor;
-
     }
+
     public String getModelName() {
         return modelName;
     }
@@ -31,6 +31,7 @@ public class Jaeger {
             this.modelName = modelName;
         }
     }
+    
     public String getMark() {
         return mark;
     }
