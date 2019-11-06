@@ -12,11 +12,11 @@ public class CalculatorTest {
             calc.setNumber1(number1);
             System.out.println("Введите знак математической операции");
             char calculate = scanner.next().charAt(0);
-            calc.setCalculate(calculate);
+            calc.setOperation(calculate);
             System.out.println("Ввведите второе число: ");
             int number2 = scanner.nextInt();
             calc.setNumber2(number2);       
-            calc.calculate();
+            calc.operation();
             do {
                 System.out.println("Хотите продолжить? [да/нет]");
                 answer = scanner.next();
