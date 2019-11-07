@@ -28,31 +28,39 @@ public class Calculator {
         this.operation = operation;
     }
 
-    public boolean operation() {
+    public void calculate (int number1, int number2, char operation) {
+        int results;
         switch (operation) {
             case '+':
-                System.out.println(number1 + number2);
+                results = number1 + number2;
+                System.out.println(results);
                 break;
             case '-':
-                System.out.println(number1 - number2);
+                results = number1 - number2;
+                System.out.println(results);
                 break;
             case '*':
-                System.out.println(number1 * number2);
+                results =  number1 * number2;
+                System.out.println(results);
                 break;
             case '/':
-                System.out.println(number1 / number2);
+                results = number1 / number2;
+                System.out.println(results);
                 break;
             case '^':
                 int result = 1;
                 for (int i = 0; i < number2; i++) {
-                    result *= number1;
+                    result = result * number1;
                 }
-                System.out.println(result);
+                results = result;
+                System.out.println(results);
                 break;
             case '%':
-                System.out.println(number1 % number2);
+                results = number1 % number2;
+                System.out.println(results);
                 break;
+             default:
+                 System.out.println("Данной математической операции не существует! Попробуйте снова.");
         }
-        return true;
     }
 }
