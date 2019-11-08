@@ -19,9 +19,9 @@ public class GuessNumber {
                 break;
             } else {
                 if (numberP1 < numberToGuess) {
-                    System.out.println(pl.getName() + " введенное Вами число больше того, что загадал компьютер");
-                } else if (numberP1 > numberToGuess) {
                     System.out.println(pl.getName() + " введенное Вами число меньше того, что загадал компьютер");
+                } else if (numberP1 > numberToGuess) {
+                    System.out.println(pl.getName() + " введенное Вами число больше того, что загадал компьютер");
                 }
 
             System.out.println(p2.getName() + " введите число, которое считаете, что загадал компьютер");
@@ -36,9 +36,9 @@ public class GuessNumber {
                 break;
             }
                 if (numberP2 < numberToGuess) {
-                   System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
+                   System.out.println(p2.getName() + " введенное Вами число меньше того, что загадал компьютер");
                 } else if (numberP2 > numberToGuess) {
-                    System.out.println(p2.getName() + " введенное Вами число меньше того, что загадал компьютер");
+                    System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
                 }
                     System.out.println("Вам необходимо попробовать ещё раз");
             }
