@@ -17,12 +17,11 @@ public class GuessNumber {
                 System.out.println(pl.getName() + " угадал!!!");
                 System.out.println("Конец игры");
                 break;
-            } else {
-                if (numberP1 < numberToGuess) {
-                    System.out.println(pl.getName() + " введенное Вами число меньше того, что загадал компьютер");
-                } else if (numberP1 > numberToGuess) {
-                    System.out.println(pl.getName() + " введенное Вами число больше того, что загадал компьютер");
-                }
+            } else if (numberP1 < numberToGuess) {
+                System.out.println(pl.getName() + " введенное Вами число меньше того, что загадал компьютер");
+            } else if (numberP1 > numberToGuess) {
+                System.out.println(pl.getName() + " введенное Вами число больше того, что загадал компьютер");
+            }
 
             System.out.println(p2.getName() + " введите число, которое считаете, что загадал компьютер");
             int numberP2 = scan.nextInt();
@@ -34,14 +33,12 @@ public class GuessNumber {
                 System.out.println(p2.getName() + " угадал!!!");
                 System.out.println("Конец игры");
                 break;
+            } else if (numberP2 < numberToGuess) {
+                System.out.println(p2.getName() + " введенное Вами число меньше того, что загадал компьютер");
+            } else if (numberP2 > numberToGuess) {
+                System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
             }
-                if (numberP2 < numberToGuess) {
-                   System.out.println(p2.getName() + " введенное Вами число меньше того, что загадал компьютер");
-                } else if (numberP2 > numberToGuess) {
-                    System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
-                }
-                    System.out.println("Вам необходимо попробовать ещё раз");
-            }
+                System.out.println("Вам необходимо попробовать ещё раз");
         }
     }
 }
