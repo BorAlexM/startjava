@@ -16,7 +16,7 @@ public class Calculator {
         this.operation = operation;
     }
 
-    public void calculate (int number1, int number2, char operation) {
+    public void calculate(int number1, int number2, char operation) {
         switch (operation) {
             case '+':
                 System.out.println(number1 + number2);
@@ -41,7 +41,7 @@ public class Calculator {
                 System.out.println(number1 % number2);
                 break;
              default:
-                 System.out.println("Данной математической операции не существует! Попробуйте снова.");
+                System.out.println("Данной математической операции не существует! Попробуйте снова.");
         }
     }
 }

@@ -2,8 +2,15 @@ import java.util.Scanner;
 
 public class GuessNumber {
     Scanner scan = new Scanner(System.in);
+    Player p1;
+    Player p2;
 
-    public void startGame (Player pl, Player p2, int numberToGuess) {
+    public GuessNumber (Player p1, Player p2){
+        this.p1 = p1;
+        this.p2 = p2;
+    }
+
+    public void startGame(int numberToGuess) {
         System.out.println("Компьютер загадывает число от 0 до 100...");
 
         while (true) {
@@ -25,7 +32,7 @@ public class GuessNumber {
 
             System.out.println(p2.getName() + " введите число, которое считаете, что загадал компьютер");
             int numberP2 = scan.nextInt();
-            pl.setNumber(numberP2);
+            p2.setNumber(numberP2);
             System.out.println(p2.getName() + " думает, это число " + numberP2);
 
             if (numberP2 == numberToGuess) {
@@ -38,7 +45,7 @@ public class GuessNumber {
             } else if (numberP2 > numberToGuess) {
                 System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
             }
-                System.out.println("Вам необходимо попробовать ещё раз");
+            System.out.println("Вам необходимо попробовать ещё раз");
         }
     }
 }
