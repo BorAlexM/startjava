@@ -10,7 +10,7 @@ public class GuessNumberTest {
             System.out.println("Введите имя второго игрока");
             Player p2 = new Player(scan.nextLine());
             GuessNumber game = new GuessNumber(p1, p2);
-            game.startGame((int)(Math.random() * 101));
+            game.startGame();
             do {
                 System.out.println("Хотите продолжить? [да/нет]");
                 play = scan.nextLine();
