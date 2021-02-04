@@ -1,4 +1,4 @@
-package com.startjava.lesson_2_3.game;
+package com.startjava.lesson_2_3_4.game;
 
 import java.util.Scanner;
 
@@ -16,34 +16,34 @@ public class GuessNumber {
     public void startGame() {
         System.out.println("Компьютер загадывает число от 0 до 100...");
 
-        while (true) {
-            System.out.println(pl.getName() + " введите число, которое считаете, что загадал компьютер");
-            pl.setNumber(scan.nextInt());
-            System.out.println(pl.getName() + " думает, это число " + p1.getNumber());
+        while(true) {
+            System.out.println(p1.getName() + " введите число, которое считаете, что загадал компьютер");
+            p1.setNumber(scan.nextInt());
+            System.out.println(p1.getName() + " думает, это число " + p1.getNumber());
 
-            if (p1.getNumber() == numberToGuess) {
+            if(p1.getNumber() == numberToGuess) {
                 System.out.println("У нас есть победитель");
-                System.out.println(pl.getName() + " угадал!!!");
+                System.out.println(p1.getName() + " угадал!!!");
                 System.out.println("Конец игры");
                 break;
-            } else if (p1.getNumber() < numberToGuess) {
-                System.out.println(pl.getName() + " введенное Вами число меньше того, что загадал компьютер");
-            } else if (p1.getNumber() > numberToGuess) {
-                System.out.println(pl.getName() + " введенное Вами число больше того, что загадал компьютер");
+            } else if(p1.getNumber() < numberToGuess) {
+                System.out.println(p1.getName() + " введенное Вами число меньше того, что загадал компьютер");
+            } else if(p1.getNumber() > numberToGuess) {
+                System.out.println(p1.getName() + " введенное Вами число больше того, что загадал компьютер");
             }
 
             System.out.println(p2.getName() + " введите число, которое считаете, что загадал компьютер");
             p2.setNumber(scan.nextInt());
             System.out.println(p2.getName() + " думает, это число " + p2.getNumber());
 
-            if (p2.getNumber() == numberToGuess) {
+            if(p2.getNumber() == numberToGuess) {
                 System.out.println("У нас есть победитель");
                 System.out.println(p2.getName() + " угадал!!!");
                 System.out.println("Конец игры");
                 break;
-            } else if (p2.getNumber() < numberToGuess) {
+            } else if(p2.getNumber() < numberToGuess) {
                 System.out.println(p2.getName() + " введенное Вами число меньше того, что загадал компьютер");
-            } else if (p2.getNumber() > numberToGuess) {
+            } else if(p2.getNumber() > numberToGuess) {
                 System.out.println(p2.getName() + " введенное Вами число больше того, что загадал компьютер");
             }
             System.out.println("Вам необходимо попробовать ещё раз");
